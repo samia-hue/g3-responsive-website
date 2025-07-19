@@ -87,7 +87,7 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
-.facts-discription{
+.facts-description{
     max-width: 540px;
 }
 
@@ -151,6 +151,46 @@ main > section{
 #quick-list{
     font-weight: 500;
 }
+/*features section related style*/
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.features{
+    gap: 140px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow:0 4px 30px 0  rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}    
+
+#experience-badge{
+    padding:35px 32px ;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architect img{
+    width: 100%;
+}
+
+
+
+
 
 /*sponsors related style*/
 .sponsors-info{
@@ -165,13 +205,28 @@ main > section{
 .sponsors-companies img{
     filter: grayscale(100%);
 }
+/*footer style*/
+.footer{
+    width: 1440px;
+    margin-top: 130px;
+    margin-left: 30px;
+    margin-right: 240px;
+    height: 80px;
+}
+.footer-description{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top:39px ;
+}
 
 
 /*responsive media query*/
 @media screen and (max-width:576px){
     .navbar , 
     .nav-links , 
-    .teams  
+    .teams ,
+    .features  
     {
         flex-direction: column;
     }
@@ -182,7 +237,7 @@ main > section{
         grid-template-columns: repeat(1 , 1fr);
     }
     .our-features{
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
     .facts-container , 
@@ -194,15 +249,47 @@ main > section{
         justify-items: center;
 
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+    .footer{
+        display: inline;
+        background-color: rgba(255, 144 ,14, 0.1);
+        
+    }
 }
 
 /*medium size devices*/
 @media screen and (min-width:576px) and (max-width:992px) {
     
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
     .our-features{
         margin: 50px auto;
     }
+     #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+   .facts-container{
+    grid-template-columns: repeat(2 , 1fr);
+    
+   }
+   .fact-card{
+    margin-bottom: 20px;
+   }
+   .sponsors-companies 
+    {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2px auto;
+    }
+    .footer{
+        display: inline;
+    }
+
+    
 }
